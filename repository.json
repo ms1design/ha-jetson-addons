@@ -1,0 +1,5 @@
+{
+    "name": "NVIDIA Jetson Home Assistant Add-ons",
+    "url": "https://github.com/dusty-nv/jetson-containers/tree/master/packages/smart-home/wyoming",
+    "maintainer": "Mieszko Syty <https://github.com/ms1design>"
+}
