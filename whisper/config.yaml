@@ -1,5 +1,5 @@
 ---
-version: 2.0.0
+version: latest-r36.2.0-cu122-cp311
 slug: faster-whisper
 name: Faster Whisper
 description: Speech-to-text with Faster Whisper on NVIDIA Jetson
@@ -7,6 +7,23 @@ url: https://github.com/dusty-nv/jetson-containers/tree/master/packages/smart-ho
 arch:
   - aarch64
 init: false
+machine:
+  - '!intel-nuc'
+  - '!odroid-c2'
+  - '!odroid-n2'
+  - '!odroid-xu'
+  - 'qemuarm-64'
+  - '!qemuarm'
+  - '!qemux86-64'
+  - '!qemux86'
+  - '!raspberrypi'
+  - '!raspberrypi2'
+  - '!raspberrypi3-64'
+  - '!raspberrypi3'
+  - '!raspberrypi4-64'
+  - '!raspberrypi4'
+  - '!raspberrypi5-64'
+  - '!tinker'
 discovery:
   - wyoming
 backup_exclude:
@@ -31,5 +48,4 @@ schema:
 ports:
   "10300/tcp": null
 homeassistant: 2023.8.0.dev20230728
-# image: homeassistant/{arch}-addon-faster-whisper
-image: ms1design/wyoming-whisper:latest-r36.2.0-cu122-cp311
+image: ms1design/wyoming-whisper
